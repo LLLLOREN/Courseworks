@@ -40,5 +40,6 @@ public:
     
 private:
     treeNode* tree;
+    bool isHead;
 };
 #endif /* BST_hpp */
