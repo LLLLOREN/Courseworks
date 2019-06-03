@@ -12,12 +12,13 @@ using namespace std;
 
 BST::BST(){
     tree = new treeNode;
-    tree->countNum = -1;
+    isHead = true;
 }
 
 bool BST::createBST(int num){
-    if(tree->countNum == -1){
+    if(isHead){
         tree->countNum = num;
+        isHead =  false;
         return true;
     }else{
         while(Insert(num)){
