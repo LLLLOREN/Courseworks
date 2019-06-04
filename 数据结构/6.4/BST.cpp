@@ -98,18 +98,6 @@ bool BST::Delete(int num){
     }
 }
 
-bool BST::Alter(int oriNum, int altNum){
-    treeNode *oriNode = BSTSearch(oriNum);
-    if(oriNode == NULL){
-        cout<<"Data not fount."<<endl;
-        return false;
-    }else{
-        Delete(oriNum);
-        Insert(altNum);
-        return true;
-    }
-}
-
 treeNode* BST::BSTSearch(int num){
     treeNode* ptemp;
     ptemp = tree;
