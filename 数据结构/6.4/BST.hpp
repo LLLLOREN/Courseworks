@@ -31,7 +31,6 @@ public:
     bool createBST(int num);
     bool Insert(int num);
     bool Delete(int num);
-    bool Alter(int oriNum, int altNum);
     treeNode* BSTSearch(int num);
     int getMinNum();
     int getMaxNum();
